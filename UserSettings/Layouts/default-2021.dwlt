@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: GitHub
+  m_Title: Inspector
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1466
+    x: 1406
     y: 0
-    width: 489
+    width: 736
     height: 1004
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 67
+  controlID: 102
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -85,23 +85,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1955
+    x: 2142
     y: 0
-    width: 605
+    width: 418
     height: 1299
-  m_MinSize: {x: 101, y: 121}
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,7 +119,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 325
+    width: 348
     height: 1004
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -145,7 +145,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1004
-    width: 1955
+    width: 2142
     height: 295
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -245,12 +245,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1955
+    width: 2142
     height: 1299
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 105
+  controlID: 103
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,12 +271,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1955
+    width: 2142
     height: 1004
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 106
+  controlID: 104
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,9 +292,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 325
+    x: 348
     y: 0
-    width: 1141
+    width: 1058
     height: 1004
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -323,9 +323,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1955
+    x: 2142
     y: 73
-    width: 604
+    width: 417
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -335,17 +335,17 @@ MonoBehaviour:
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
-  changeTab: 1
-  activeTab: 1
+  currentTrackingStatusHasUpdate: 1
+  currentStatusEntriesHasUpdate: 1
+  repositoryProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 1
+  changeTab: 3
+  activeTab: 3
   initProjectView:
     hasCompletedInitialCheck: 1
     isUserDataPresent: 1
     lastCheckUserChangedEvent:
-      updatedTimeString: 2022-06-17T16:55:32.371+12:00
+      updatedTimeString: 2022-06-17T17:09:11.855+12:00
       cacheType: 8
   branchesView:
     treeLocals:
@@ -394,14 +394,14 @@ MonoBehaviour:
         treeIsCheckable: 0
         checkState: 0
       selectedNode:
-        path: 
-        label: 
-        level: 0
+        path: master
+        label: master
+        level: 1
         isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
-        isActive: 0
+        isActive: 1
         treeIsCheckable: 0
         checkState: 0
     treeRemotes:
@@ -409,10 +409,21 @@ MonoBehaviour:
       folders:
         keys:
         - Remote branches
+        - origin
         values:
         - path: Remote branches
           label: Remote branches
           level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+        - path: origin
+          label: origin
+          level: 1
           isFolder: 1
           isContainer: 0
           isCollapsed: 0
@@ -439,11 +450,31 @@ MonoBehaviour:
         isActive: 0
         treeIsCheckable: 0
         checkState: 0
-      selectedNode:
-        path: Remote branches
-        label: Remote branches
-        level: 0
+      - path: origin
+        label: origin
+        level: 1
         isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      - path: origin/master
+        label: master
+        level: 2
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+      selectedNode:
+        path: 
+        label: 
+        level: 0
+        isFolder: 0
         isContainer: 0
         isCollapsed: 0
         isHidden: 0
@@ -454,19 +485,19 @@ MonoBehaviour:
     newBranchName: 
     scroll: {x: 0, y: 0}
     disableDelete: 1
-    disableCreate: 1
+    disableCreate: 0
     lastLocalAndRemoteBranchListChangedEvent:
-      updatedTimeString: 2022-06-17T16:46:24.361+12:00
+      updatedTimeString: 2022-06-17T17:17:53.026+12:00
       cacheType: 2
     lastCurrentBranchAndRemoteChange:
-      updatedTimeString: 2022-06-17T16:46:07.529+12:00
+      updatedTimeString: 2022-06-17T17:17:53.018+12:00
       cacheType: 1
     currentBranch:
       name: master
-      tracking: 
+      tracking: origin/master
     currentRemote:
-      name: 
-      url: 
+      name: origin
+      url: https://github.com/tonkatommy/Experimenting-Launch-Pad.git
       login: 
       user: 
       host: 
@@ -474,11 +505,13 @@ MonoBehaviour:
       token: 
     localBranches:
     - name: master
-      tracking: 
-    remoteBranches: []
+      tracking: origin/master
+    remoteBranches:
+    - name: origin/master
+      tracking: '[None]'
   changesView:
-    currentBranchHasUpdate: 0
-    currentStatusEntriesHasUpdate: 0
+    currentBranchHasUpdate: 1
+    currentStatusEntriesHasUpdate: 1
     currentLocksHasUpdate: 0
     commitBody: 
     commitMessage: 
@@ -488,69 +521,9 @@ MonoBehaviour:
       assets:
         keys:
         - 00000000000000001000000000000000
-        - 71ff3a6dc3990c24dbab2f10c6ef6e90
-        - f219718bb5146394b96695a88c715cfe
-        - 65b9284dafb7bad41b6bf81989193ecf
-        - d2cc38b288fe1c643a960302c9e69344
-        - 3da806da3ca8b0e4cac842f3c2cee2e2
-        - ef11c73ab0b2cdc489cd9da5ceb3e2d3
-        - 720712be6e31c444f88f57bb85bf5fa5
-        - 18e096a98c2704c40a818dd1214cd179
-        - cad92998c5182496e8b989b406d9f156
-        - d516f2a1bec6a9645a084ef8c9237132
-        - f81094832d834c64d93b198cb16b6a3e
-        - 0188ec438976e5849b40a2c1ce5f20f9
-        - 136dc24f151211d438acee17aff4e934
-        - dae2ecee8a704dd59797e26554ff8606
-        - c743ae24ee231884887054d20ccdd0ab
-        - c743ae24ee231884887054d20ccdd0ae
-        - 15ca2bebf173f2d4484686a03a45b56d
-        - 68c7e4565cde54155bb78d8e935f1ddb
-        - 68c7e4565cde54155bb78d8e935f1dd4
-        - 863e1b9976c4e46d29bf83928b3a8ab2
-        - 636d33ae594884e7d80b569f429d245d
-        - 21206c65839f84d0e9ae14bc1fdc68db
-        - ddb8611e748af425a82a497ac5a98c0c
-        - d601ecb6855bb432bae2aa49d8fd82e8
-        - 48c22d5d7479fcb49ab3be0cdd2ccec0
-        - f9fc9b08ecd899944adf9860b4abd6b6
-        - 790749ba7e4b18141953e39cb13f1b79
-        - 555cd6f54c03341b1970d950df1a5ee5
-        - a0ded7adcc817ce489fec07977f16d13
-        - 868fbb4c41814baebc00f96e24ede2f8
-        - fe5abeadcbe591e4fa9107fbc02f3998
-        - 99b48d4d4f6a66340ab06bd487d70a45
-        - 151a1d946b98deb4b98445400983ba92
-        - a83159a46d87d2a4f8cec651049b9231
-        - ebd3d0b7645742f44bde4cd8b70d0fa1
-        - 030d93289714787428a334abc6163858
-        - 37bb966fa1114374aa866cf1579a9e06
-        - e1e2b3b84d324294c9e20d403a68e287
-        - d836a0c02e74fe946a40f3b9897120e8
-        - 67ec13ef05dc9bc47a6416872ce03422
-        - 6ea315d0fd7389c41b19996891e99ae3
-        - 9fc0d4010bbf28b4594072e72b8655ab
-        - 6efdc7caf7212de4f864cbd5b5fdb794
-        - 285ec8528dc34184ebbde928ed2722f7
-        - 00000000000000006000000000000000
-        - 00000000000000007100000000000000
-        - 00000000000000008000000000000000
-        - 0000000000000000b000000000000000
-        - 0000000000000000c000000000000000
-        - 00000000000000006100000000000000
-        - 00000000000000002000000000000000
-        - 0000000000000000f100000000000000
-        - 00000000000000004100000000000000
-        - 00000000000000005100000000000000
-        - 0000000000000000b100000000000000
-        - 00000000000000004000000000000000
-        - 0000000000000000e100000000000000
-        - 00000000000000009000000000000000
-        - 00000000000000003000000000000000
-        - 00000000000000007000000000000000
-        - 0000000000000000a100000000000000
-        - 0000000000000000d100000000000000
-        - 0000000000000000c100000000000000
+        - ef61c62b6c7e90343a9504918fe9d70a
+        - a3fe1fe0ad03186489bcc0f9a6187246
+        - 33639c40f0c5ab243b44922d18fdba8c
         values:
         - path: Assets
           label: Assets
@@ -570,8 +543,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Materials
-          label: Materials
+        - path: Assets\Audio
+          label: Audio
           level: 1
           isFolder: 1
           isContainer: 0
@@ -588,8 +561,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Materials\Ground.mat
-          label: Ground.mat
+        - path: Assets\Audio\rocket-thrust.ogg
+          label: rocket-thrust.ogg
           level: 2
           isFolder: 0
           isContainer: 1
@@ -600,14 +573,14 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Materials\Ground.mat
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Ground.mat
-            projectPath: Assets\Materials\Ground.mat
+            path: Assets\Audio\rocket-thrust.ogg
+            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.ogg
+            projectPath: Assets\Audio\rocket-thrust.ogg
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
-        - path: Assets\Materials\Landing Pad.mat
-          label: Landing Pad.mat
+        - path: Assets\Audio\rocket-thrust.xmp
+          label: rocket-thrust.xmp
           level: 2
           isFolder: 0
           isContainer: 1
@@ -618,1134 +591,17 @@ MonoBehaviour:
           checkState: 0
           isLocked: 0
           gitStatusEntry:
-            path: Assets\Materials\Landing Pad.mat
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Landing
-              Pad.mat
-            projectPath: Assets\Materials\Landing Pad.mat
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Materials\Launch Pad.mat
-          label: Launch Pad.mat
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Materials\Launch Pad.mat
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Launch
-              Pad.mat
-            projectPath: Assets\Materials\Launch Pad.mat
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Materials\Obstacle.mat
-          label: Obstacle.mat
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Materials\Obstacle.mat
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Obstacle.mat
-            projectPath: Assets\Materials\Obstacle.mat
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Materials\Rocket.mat
-          label: Rocket.mat
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Materials\Rocket.mat
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Rocket.mat
-            projectPath: Assets\Materials\Rocket.mat
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins
-          label: Plugins
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub
-          label: GitHub
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor
-          label: Editor
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          label: AsyncBridge.Net35.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-            projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          label: big-logo@2x.png
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\big-logo@2x.png
-            projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\credits.txt
-          label: credits.txt
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\credits.txt
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\credits.txt
-            projectPath: Assets\Plugins\GitHub\Editor\credits.txt
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\eula.txt
-          label: eula.txt
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\eula.txt
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\eula.txt
-            projectPath: Assets\Plugins\GitHub\Editor\eula.txt
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          label: ExtensionLoader.cs
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-            projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          label: GitHub.Api.45.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          label: GitHub.Api.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          label: GitHub.Logging.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          label: GitHub.Unity.45.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          label: GitHub.Unity.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-            projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          label: GitHub.UnityShim.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-            projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-          label: libsfw.bundle
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.bundle
-            projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\libsfw.so
-          label: libsfw.so
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\libsfw.so
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.so
-            projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          label: Mono.Posix.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-            projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          label: QuickGuide.pdf
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-            projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          label: ReadOnlyCollectionsInterfaces.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-            projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-          label: sfw.net.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll
-            projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-          label: System.Threading.dll
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\System.Threading.dll
-            projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          label: UnityAPIWrapper.cs
-          level: 4
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-            projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\x64
-          label: x64
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          label: pthreadVC2.dll
-          level: 5
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-            projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          label: sfw_x64.dll
-          level: 5
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-            projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\x86
-          label: x86
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          label: pthreadVC2.dll
-          level: 5
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-            projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          label: sfw_x86.dll
-          level: 5
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-            projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs
-          label: Prefabs
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs\Ground.prefab
-          label: Ground.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Ground.prefab
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Ground.prefab
-            projectPath: Assets\Prefabs\Ground.prefab
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs\Landing Pad.prefab
-          label: Landing Pad.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Landing Pad.prefab
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Landing
-              Pad.prefab
-            projectPath: Assets\Prefabs\Landing Pad.prefab
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs\Launch Pad.prefab
-          label: Launch Pad.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Launch Pad.prefab
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Launch
-              Pad.prefab
-            projectPath: Assets\Prefabs\Launch Pad.prefab
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs\Obstacle.prefab
-          label: Obstacle.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Obstacle.prefab
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Obstacle.prefab
-            projectPath: Assets\Prefabs\Obstacle.prefab
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Prefabs\Rocket.prefab
-          label: Rocket.prefab
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Prefabs\Rocket.prefab
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Rocket.prefab
-            projectPath: Assets\Prefabs\Rocket.prefab
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes\Sandbox.unity
-          label: Sandbox.unity
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scenes\Sandbox.unity
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes\Sandbox.unity
-            projectPath: Assets\Scenes\Sandbox.unity
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts\Movement.cs
-          label: Movement.cs
-          level: 2
-          isFolder: 0
-          isContainer: 1
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: Assets\Scripts\Movement.cs
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts\Movement.cs
-            projectPath: Assets\Scripts\Movement.cs
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\AudioManager.asset
-          label: AudioManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\AudioManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\AudioManager.asset
-            projectPath: ProjectSettings\AudioManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\ClusterInputManager.asset
-          label: ClusterInputManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\ClusterInputManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ClusterInputManager.asset
-            projectPath: ProjectSettings\ClusterInputManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\DynamicsManager.asset
-          label: DynamicsManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\DynamicsManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\DynamicsManager.asset
-            projectPath: ProjectSettings\DynamicsManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\EditorBuildSettings.asset
-          label: EditorBuildSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\EditorBuildSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\EditorBuildSettings.asset
-            projectPath: ProjectSettings\EditorBuildSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\EditorSettings.asset
-          label: EditorSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\EditorSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\EditorSettings.asset
-            projectPath: ProjectSettings\EditorSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\GraphicsSettings.asset
-          label: GraphicsSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\GraphicsSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\GraphicsSettings.asset
-            projectPath: ProjectSettings\GraphicsSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\InputManager.asset
-          label: InputManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\InputManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\InputManager.asset
-            projectPath: ProjectSettings\InputManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\MemorySettings.asset
-          label: MemorySettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\MemorySettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\MemorySettings.asset
-            projectPath: ProjectSettings\MemorySettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\NavMeshAreas.asset
-          label: NavMeshAreas.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\NavMeshAreas.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\NavMeshAreas.asset
-            projectPath: ProjectSettings\NavMeshAreas.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\Physics2DSettings.asset
-          label: Physics2DSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\Physics2DSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\Physics2DSettings.asset
-            projectPath: ProjectSettings\Physics2DSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\PresetManager.asset
-          label: PresetManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\PresetManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\PresetManager.asset
-            projectPath: ProjectSettings\PresetManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\ProjectSettings.asset
-          label: ProjectSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\ProjectSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ProjectSettings.asset
-            projectPath: ProjectSettings\ProjectSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\ProjectVersion.txt
-          label: ProjectVersion.txt
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\ProjectVersion.txt
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ProjectVersion.txt
-            projectPath: ProjectSettings\ProjectVersion.txt
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\QualitySettings.asset
-          label: QualitySettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\QualitySettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\QualitySettings.asset
-            projectPath: ProjectSettings\QualitySettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\TagManager.asset
-          label: TagManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\TagManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\TagManager.asset
-            projectPath: ProjectSettings\TagManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\TimeManager.asset
-          label: TimeManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\TimeManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\TimeManager.asset
-            projectPath: ProjectSettings\TimeManager.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\UnityConnectSettings.asset
-          label: UnityConnectSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\UnityConnectSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\UnityConnectSettings.asset
-            projectPath: ProjectSettings\UnityConnectSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\VersionControlSettings.asset
-          label: VersionControlSettings.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\VersionControlSettings.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\VersionControlSettings.asset
-            projectPath: ProjectSettings\VersionControlSettings.asset
-            originalPath: 
-            indexStatus: 1
-            workTreeStatus: 1
-        - path: ProjectSettings\VFXManager.asset
-          label: VFXManager.asset
-          level: 1
-          isFolder: 0
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: ProjectSettings\VFXManager.asset
-            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\VFXManager.asset
-            projectPath: ProjectSettings\VFXManager.asset
+            path: Assets\Audio\rocket-thrust.xmp
+            fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.xmp
+            projectPath: Assets\Audio\rocket-thrust.xmp
             originalPath: 
             indexStatus: 1
             workTreeStatus: 1
       folders:
         keys:
-        - .vscode
         - Assets
-        - Assets\Materials
-        - Assets\Plugins
-        - Assets\Plugins\GitHub
-        - Assets\Plugins\GitHub\Editor
-        - Assets\Plugins\GitHub\Editor\x64
-        - Assets\Plugins\GitHub\Editor\x86
-        - Assets\Prefabs
-        - Assets\Scenes
-        - Assets\Scripts
-        - Packages
-        - ProjectSettings
-        - ProjectSettings\Packages
-        - ProjectSettings\Packages\com.unity.testtools.codecoverage
-        - UserSettings
-        - UserSettings\Layouts
+        - Assets\Audio
         values:
-        - path: .vscode
-          label: .vscode
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
         - path: Assets
           label: Assets
           level: 0
@@ -1764,260 +620,8 @@ MonoBehaviour:
             originalPath: 
             indexStatus: 0
             workTreeStatus: 0
-        - path: Assets\Materials
-          label: Materials
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins
-          label: Plugins
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub
-          label: GitHub
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor
-          label: Editor
-          level: 3
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x64
-          label: x64
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Plugins\GitHub\Editor\x86
-          label: x86
-          level: 4
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Prefabs
-          label: Prefabs
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scenes
-          label: Scenes
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Assets\Scripts
-          label: Scripts
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: Packages
-          label: Packages
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings
-          label: ProjectSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings\Packages
-          label: Packages
-          level: 1
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: ProjectSettings\Packages\com.unity.testtools.codecoverage
-          label: com.unity.testtools.codecoverage
-          level: 2
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings
-          label: UserSettings
-          level: 0
-          isFolder: 1
-          isContainer: 0
-          isCollapsed: 0
-          isHidden: 0
-          isActive: 0
-          treeIsCheckable: 1
-          checkState: 0
-          isLocked: 0
-          gitStatusEntry:
-            path: 
-            fullPath: 
-            projectPath: 
-            originalPath: 
-            indexStatus: 0
-            workTreeStatus: 0
-        - path: UserSettings\Layouts
-          label: Layouts
+        - path: Assets\Audio
+          label: Audio
           level: 1
           isFolder: 1
           isContainer: 0
@@ -2062,42 +666,6 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: .vscode
-        label: .vscode
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: .vscode\settings.json
-        label: settings.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: .vscode\settings.json
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.vscode\settings.json
-          projectPath: .vscode\settings.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
       - path: Assets
         label: Assets
         level: 0
@@ -2116,8 +684,8 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Materials.meta
-        label: Materials.meta
+      - path: Assets\Audio.meta
+        label: Audio.meta
         level: 1
         isFolder: 0
         isContainer: 0
@@ -2128,234 +696,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Materials.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials.meta
-          projectPath: Assets\Materials.meta
+          path: Assets\Audio.meta
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio.meta
+          projectPath: Assets\Audio.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Materials
-        label: Materials
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Materials\Ground.mat
-        label: Ground.mat
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Ground.mat
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Ground.mat
-          projectPath: Assets\Materials\Ground.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Ground.mat.meta
-        label: Ground.mat.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Ground.mat.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Ground.mat.meta
-          projectPath: Assets\Materials\Ground.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Landing Pad.mat
-        label: Landing Pad.mat
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Landing Pad.mat
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Landing
-            Pad.mat
-          projectPath: Assets\Materials\Landing Pad.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Landing Pad.mat.meta
-        label: Landing Pad.mat.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Landing Pad.mat.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Landing
-            Pad.mat.meta
-          projectPath: Assets\Materials\Landing Pad.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Launch Pad.mat
-        label: Launch Pad.mat
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Launch Pad.mat
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Launch
-            Pad.mat
-          projectPath: Assets\Materials\Launch Pad.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Launch Pad.mat.meta
-        label: Launch Pad.mat.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Launch Pad.mat.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Launch
-            Pad.mat.meta
-          projectPath: Assets\Materials\Launch Pad.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Obstacle.mat
-        label: Obstacle.mat
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Obstacle.mat
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Obstacle.mat
-          projectPath: Assets\Materials\Obstacle.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Obstacle.mat.meta
-        label: Obstacle.mat.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Obstacle.mat.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Obstacle.mat.meta
-          projectPath: Assets\Materials\Obstacle.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Rocket.mat
-        label: Rocket.mat
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Rocket.mat
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Rocket.mat
-          projectPath: Assets\Materials\Rocket.mat
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Materials\Rocket.mat.meta
-        label: Rocket.mat.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Materials\Rocket.mat.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Rocket.mat.meta
-          projectPath: Assets\Materials\Rocket.mat.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins.meta
-        label: Plugins.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins.meta
-          projectPath: Assets\Plugins.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins
-        label: Plugins
+      - path: Assets\Audio
+        label: Audio
         level: 1
         isFolder: 1
         isContainer: 0
@@ -2372,11 +720,11 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 0
           workTreeStatus: 0
-      - path: Assets\Plugins\GitHub.meta
-        label: GitHub.meta
+      - path: Assets\Audio\rocket-thrust.ogg
+        label: rocket-thrust.ogg
         level: 2
         isFolder: 0
-        isContainer: 0
+        isContainer: 1
         isCollapsed: 0
         isHidden: 0
         isActive: 0
@@ -2384,32 +732,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Plugins\GitHub.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub.meta
-          projectPath: Assets\Plugins\GitHub.meta
+          path: Assets\Audio\rocket-thrust.ogg
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.ogg
+          projectPath: Assets\Audio\rocket-thrust.ogg
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Plugins\GitHub
-        label: GitHub
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor.meta
-        label: Editor.meta
+      - path: Assets\Audio\rocket-thrust.ogg.meta
+        label: rocket-thrust.ogg.meta
         level: 3
         isFolder: 0
         isContainer: 0
@@ -2420,968 +750,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor.meta
-          projectPath: Assets\Plugins\GitHub\Editor.meta
+          path: Assets\Audio\rocket-thrust.ogg.meta
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.ogg.meta
+          projectPath: Assets\Audio\rocket-thrust.ogg.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor
-        label: Editor
-        level: 3
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-        label: AsyncBridge.Net35.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-        label: AsyncBridge.Net35.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-        label: big-logo@2x.png
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-        label: big-logo@2x.png.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-          projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\credits.txt
-        label: credits.txt
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\credits.txt
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\credits.txt
-          projectPath: Assets\Plugins\GitHub\Editor\credits.txt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
-        label: credits.txt.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\credits.txt.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\credits.txt.meta
-          projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\eula.txt
-        label: eula.txt
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\eula.txt
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\eula.txt
-          projectPath: Assets\Plugins\GitHub\Editor\eula.txt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
-        label: eula.txt.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\eula.txt.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\eula.txt.meta
-          projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-        label: ExtensionLoader.cs
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-        label: ExtensionLoader.cs.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-          projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-        label: GitHub.Api.45.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-        label: GitHub.Api.45.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-        label: GitHub.Api.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-        label: GitHub.Api.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-        label: GitHub.Logging.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-        label: GitHub.Logging.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-        label: GitHub.Unity.45.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-        label: GitHub.Unity.45.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-        label: GitHub.Unity.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-        label: GitHub.Unity.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-        label: GitHub.UnityShim.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-        label: GitHub.UnityShim.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-        label: libsfw.bundle
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.bundle
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-        label: libsfw.bundle.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\libsfw.so
-        label: libsfw.so
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\libsfw.so
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.so
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-        label: libsfw.so.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.so.meta
-          projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-        label: Mono.Posix.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-        label: Mono.Posix.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-        label: QuickGuide.pdf
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-        label: QuickGuide.pdf.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-          projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-        label: ReadOnlyCollectionsInterfaces.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-        label: ReadOnlyCollectionsInterfaces.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-        label: sfw.net.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll
-          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-        label: sfw.net.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-        label: System.Threading.dll
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\System.Threading.dll
-          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-        label: System.Threading.dll.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-        label: UnityAPIWrapper.cs
-        level: 4
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-        label: UnityAPIWrapper.cs.meta
-        level: 5
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-          projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x64.meta
-        label: x64.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x64.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x64.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x64
-        label: x64
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-        label: pthreadVC2.dll
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-        label: pthreadVC2.dll.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-        label: sfw_x64.dll
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-        label: sfw_x64.dll.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x86.meta
-        label: x86.meta
-        level: 4
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x86.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x86.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x86
-        label: x86
-        level: 4
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-        label: pthreadVC2.dll
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-        label: pthreadVC2.dll.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-        label: sfw_x86.dll
-        level: 5
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-        label: sfw_x86.dll.meta
-        level: 6
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-          projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs.meta
-        label: Prefabs.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs.meta
-          projectPath: Assets\Prefabs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs
-        label: Prefabs
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Prefabs\Ground.prefab
-        label: Ground.prefab
+      - path: Assets\Audio\rocket-thrust.xmp
+        label: rocket-thrust.xmp
         level: 2
         isFolder: 0
         isContainer: 1
@@ -3392,14 +768,14 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Prefabs\Ground.prefab
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Ground.prefab
-          projectPath: Assets\Prefabs\Ground.prefab
+          path: Assets\Audio\rocket-thrust.xmp
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.xmp
+          projectPath: Assets\Audio\rocket-thrust.xmp
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
-      - path: Assets\Prefabs\Ground.prefab.meta
-        label: Ground.prefab.meta
+      - path: Assets\Audio\rocket-thrust.xmp.meta
+        label: rocket-thrust.xmp.meta
         level: 3
         isFolder: 0
         isContainer: 0
@@ -3410,931 +786,9 @@ MonoBehaviour:
         checkState: 0
         isLocked: 0
         gitStatusEntry:
-          path: Assets\Prefabs\Ground.prefab.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Ground.prefab.meta
-          projectPath: Assets\Prefabs\Ground.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Landing Pad.prefab
-        label: Landing Pad.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Landing Pad.prefab
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Landing
-            Pad.prefab
-          projectPath: Assets\Prefabs\Landing Pad.prefab
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Landing Pad.prefab.meta
-        label: Landing Pad.prefab.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Landing Pad.prefab.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Landing
-            Pad.prefab.meta
-          projectPath: Assets\Prefabs\Landing Pad.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Launch Pad.prefab
-        label: Launch Pad.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Launch Pad.prefab
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Launch
-            Pad.prefab
-          projectPath: Assets\Prefabs\Launch Pad.prefab
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Launch Pad.prefab.meta
-        label: Launch Pad.prefab.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Launch Pad.prefab.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Launch
-            Pad.prefab.meta
-          projectPath: Assets\Prefabs\Launch Pad.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Obstacle.prefab
-        label: Obstacle.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Obstacle.prefab
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Obstacle.prefab
-          projectPath: Assets\Prefabs\Obstacle.prefab
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Obstacle.prefab.meta
-        label: Obstacle.prefab.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Obstacle.prefab.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Obstacle.prefab.meta
-          projectPath: Assets\Prefabs\Obstacle.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Rocket.prefab
-        label: Rocket.prefab
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Rocket.prefab
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Rocket.prefab
-          projectPath: Assets\Prefabs\Rocket.prefab
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Prefabs\Rocket.prefab.meta
-        label: Rocket.prefab.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Prefabs\Rocket.prefab.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Rocket.prefab.meta
-          projectPath: Assets\Prefabs\Rocket.prefab.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Scenes.meta
-        label: Scenes.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes.meta
-          projectPath: Assets\Scenes.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Scenes
-        label: Scenes
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scenes\Sandbox.unity
-        label: Sandbox.unity
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes\Sandbox.unity
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes\Sandbox.unity
-          projectPath: Assets\Scenes\Sandbox.unity
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Scenes\Sandbox.unity.meta
-        label: Sandbox.unity.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scenes\Sandbox.unity.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes\Sandbox.unity.meta
-          projectPath: Assets\Scenes\Sandbox.unity.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Scripts.meta
-        label: Scripts.meta
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts.meta
-          projectPath: Assets\Scripts.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Scripts
-        label: Scripts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Assets\Scripts\Movement.cs
-        label: Movement.cs
-        level: 2
-        isFolder: 0
-        isContainer: 1
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Movement.cs
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts\Movement.cs
-          projectPath: Assets\Scripts\Movement.cs
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Assets\Scripts\Movement.cs.meta
-        label: Movement.cs.meta
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Assets\Scripts\Movement.cs.meta
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts\Movement.cs.meta
-          projectPath: Assets\Scripts\Movement.cs.meta
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Packages
-        label: Packages
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: Packages\manifest.json
-        label: manifest.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\manifest.json
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Packages\manifest.json
-          projectPath: Packages\manifest.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: Packages\packages-lock.json
-        label: packages-lock.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: Packages\packages-lock.json
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Packages\packages-lock.json
-          projectPath: Packages\packages-lock.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings
-        label: ProjectSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings\AudioManager.asset
-        label: AudioManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\AudioManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\AudioManager.asset
-          projectPath: ProjectSettings\AudioManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\boot.config
-        label: boot.config
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\boot.config
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\boot.config
-          projectPath: ProjectSettings\boot.config
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\ClusterInputManager.asset
-        label: ClusterInputManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\ClusterInputManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ClusterInputManager.asset
-          projectPath: ProjectSettings\ClusterInputManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\DynamicsManager.asset
-        label: DynamicsManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\DynamicsManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\DynamicsManager.asset
-          projectPath: ProjectSettings\DynamicsManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\EditorBuildSettings.asset
-        label: EditorBuildSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\EditorBuildSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\EditorBuildSettings.asset
-          projectPath: ProjectSettings\EditorBuildSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\EditorSettings.asset
-        label: EditorSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\EditorSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\EditorSettings.asset
-          projectPath: ProjectSettings\EditorSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\GraphicsSettings.asset
-        label: GraphicsSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\GraphicsSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\GraphicsSettings.asset
-          projectPath: ProjectSettings\GraphicsSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\InputManager.asset
-        label: InputManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\InputManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\InputManager.asset
-          projectPath: ProjectSettings\InputManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\MemorySettings.asset
-        label: MemorySettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\MemorySettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\MemorySettings.asset
-          projectPath: ProjectSettings\MemorySettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\NavMeshAreas.asset
-        label: NavMeshAreas.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\NavMeshAreas.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\NavMeshAreas.asset
-          projectPath: ProjectSettings\NavMeshAreas.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\PackageManagerSettings.asset
-        label: PackageManagerSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\PackageManagerSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\PackageManagerSettings.asset
-          projectPath: ProjectSettings\PackageManagerSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\Packages
-        label: Packages
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage
-        label: com.unity.testtools.codecoverage
-        level: 2
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-        label: Settings.json
-        level: 3
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\Physics2DSettings.asset
-        label: Physics2DSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\Physics2DSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\Physics2DSettings.asset
-          projectPath: ProjectSettings\Physics2DSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\PresetManager.asset
-        label: PresetManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\PresetManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\PresetManager.asset
-          projectPath: ProjectSettings\PresetManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\ProjectSettings.asset
-        label: ProjectSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\ProjectSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ProjectSettings.asset
-          projectPath: ProjectSettings\ProjectSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\ProjectVersion.txt
-        label: ProjectVersion.txt
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\ProjectVersion.txt
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ProjectVersion.txt
-          projectPath: ProjectSettings\ProjectVersion.txt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\QualitySettings.asset
-        label: QualitySettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\QualitySettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\QualitySettings.asset
-          projectPath: ProjectSettings\QualitySettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\SceneTemplateSettings.json
-        label: SceneTemplateSettings.json
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\SceneTemplateSettings.json
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\SceneTemplateSettings.json
-          projectPath: ProjectSettings\SceneTemplateSettings.json
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\TagManager.asset
-        label: TagManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\TagManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\TagManager.asset
-          projectPath: ProjectSettings\TagManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\TimeManager.asset
-        label: TimeManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\TimeManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\TimeManager.asset
-          projectPath: ProjectSettings\TimeManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\UnityConnectSettings.asset
-        label: UnityConnectSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\UnityConnectSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\UnityConnectSettings.asset
-          projectPath: ProjectSettings\UnityConnectSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\VersionControlSettings.asset
-        label: VersionControlSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\VersionControlSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\VersionControlSettings.asset
-          projectPath: ProjectSettings\VersionControlSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\VFXManager.asset
-        label: VFXManager.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\VFXManager.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\VFXManager.asset
-          projectPath: ProjectSettings\VFXManager.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: ProjectSettings\XRSettings.asset
-        label: XRSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: ProjectSettings\XRSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\XRSettings.asset
-          projectPath: ProjectSettings\XRSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings
-        label: UserSettings
-        level: 0
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\EditorUserSettings.asset
-        label: EditorUserSettings.asset
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\EditorUserSettings.asset
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\UserSettings\EditorUserSettings.asset
-          projectPath: UserSettings\EditorUserSettings.asset
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings\Layouts
-        label: Layouts
-        level: 1
-        isFolder: 1
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: 
-          fullPath: 
-          projectPath: 
-          originalPath: 
-          indexStatus: 0
-          workTreeStatus: 0
-      - path: UserSettings\Layouts\default-2021.dwlt
-        label: default-2021.dwlt
-        level: 2
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Layouts\default-2021.dwlt
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\UserSettings\Layouts\default-2021.dwlt
-          projectPath: UserSettings\Layouts\default-2021.dwlt
-          originalPath: 
-          indexStatus: 1
-          workTreeStatus: 1
-      - path: UserSettings\Search.settings
-        label: Search.settings
-        level: 1
-        isFolder: 0
-        isContainer: 0
-        isCollapsed: 0
-        isHidden: 0
-        isActive: 0
-        treeIsCheckable: 1
-        checkState: 0
-        isLocked: 0
-        gitStatusEntry:
-          path: UserSettings\Search.settings
-          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\UserSettings\Search.settings
-          projectPath: UserSettings\Search.settings
+          path: Assets\Audio\rocket-thrust.xmp.meta
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.xmp.meta
+          projectPath: Assets\Audio\rocket-thrust.xmp.meta
           originalPath: 
           indexStatus: 1
           workTreeStatus: 1
@@ -4358,683 +812,51 @@ MonoBehaviour:
           indexStatus: 0
           workTreeStatus: 0
     gitStatusEntries:
-    - path: .vscode\settings.json
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.vscode\settings.json
-      projectPath: .vscode\settings.json
+    - path: Assets\Audio.meta
+      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio.meta
+      projectPath: Assets\Audio.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Materials.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials.meta
-      projectPath: Assets\Materials.meta
+    - path: Assets\Audio\rocket-thrust.ogg
+      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.ogg
+      projectPath: Assets\Audio\rocket-thrust.ogg
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Materials\Ground.mat
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Ground.mat
-      projectPath: Assets\Materials\Ground.mat
+    - path: Assets\Audio\rocket-thrust.ogg.meta
+      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.ogg.meta
+      projectPath: Assets\Audio\rocket-thrust.ogg.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Materials\Ground.mat.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Ground.mat.meta
-      projectPath: Assets\Materials\Ground.mat.meta
+    - path: Assets\Audio\rocket-thrust.xmp
+      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.xmp
+      projectPath: Assets\Audio\rocket-thrust.xmp
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Materials\Landing Pad.mat
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Landing
-        Pad.mat
-      projectPath: Assets\Materials\Landing Pad.mat
+    - path: Assets\Audio\rocket-thrust.xmp.meta
+      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Audio\rocket-thrust.xmp.meta
+      projectPath: Assets\Audio\rocket-thrust.xmp.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Materials\Landing Pad.mat.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Landing
-        Pad.mat.meta
-      projectPath: Assets\Materials\Landing Pad.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Materials\Launch Pad.mat
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Launch
-        Pad.mat
-      projectPath: Assets\Materials\Launch Pad.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Materials\Launch Pad.mat.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Launch
-        Pad.mat.meta
-      projectPath: Assets\Materials\Launch Pad.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Materials\Obstacle.mat
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Obstacle.mat
-      projectPath: Assets\Materials\Obstacle.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Materials\Obstacle.mat.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Obstacle.mat.meta
-      projectPath: Assets\Materials\Obstacle.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Materials\Rocket.mat
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Rocket.mat
-      projectPath: Assets\Materials\Rocket.mat
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Materials\Rocket.mat.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Materials\Rocket.mat.meta
-      projectPath: Assets\Materials\Rocket.mat.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins.meta
-      projectPath: Assets\Plugins.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub.meta
-      projectPath: Assets\Plugins\GitHub.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor.meta
-      projectPath: Assets\Plugins\GitHub\Editor.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\big-logo@2x.png
-      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-      projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\credits.txt
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\credits.txt
-      projectPath: Assets\Plugins\GitHub\Editor\credits.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\credits.txt.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\credits.txt.meta
-      projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\eula.txt
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\eula.txt
-      projectPath: Assets\Plugins\GitHub\Editor\eula.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\eula.txt.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\eula.txt.meta
-      projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-      projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\libsfw.bundle
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.bundle
-      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\libsfw.so
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.so
-      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\libsfw.so.meta
-      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-      projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll
-      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\System.Threading.dll
-      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-      projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-      projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64.meta
-      projectPath: Assets\Plugins\GitHub\Editor\x64.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86.meta
-      projectPath: Assets\Plugins\GitHub\Editor\x86.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs.meta
-      projectPath: Assets\Prefabs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Ground.prefab
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Ground.prefab
-      projectPath: Assets\Prefabs\Ground.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Ground.prefab.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Ground.prefab.meta
-      projectPath: Assets\Prefabs\Ground.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Landing Pad.prefab
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Landing
-        Pad.prefab
-      projectPath: Assets\Prefabs\Landing Pad.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Landing Pad.prefab.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Landing
-        Pad.prefab.meta
-      projectPath: Assets\Prefabs\Landing Pad.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Launch Pad.prefab
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Launch
-        Pad.prefab
-      projectPath: Assets\Prefabs\Launch Pad.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Launch Pad.prefab.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Launch
-        Pad.prefab.meta
-      projectPath: Assets\Prefabs\Launch Pad.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Obstacle.prefab
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Obstacle.prefab
-      projectPath: Assets\Prefabs\Obstacle.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Obstacle.prefab.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Obstacle.prefab.meta
-      projectPath: Assets\Prefabs\Obstacle.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Rocket.prefab
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Rocket.prefab
-      projectPath: Assets\Prefabs\Rocket.prefab
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Prefabs\Rocket.prefab.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Prefabs\Rocket.prefab.meta
-      projectPath: Assets\Prefabs\Rocket.prefab.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scenes.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes.meta
-      projectPath: Assets\Scenes.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scenes\Sandbox.unity
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes\Sandbox.unity
-      projectPath: Assets\Scenes\Sandbox.unity
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scenes\Sandbox.unity.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scenes\Sandbox.unity.meta
-      projectPath: Assets\Scenes\Sandbox.unity.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scripts.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts.meta
-      projectPath: Assets\Scripts.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scripts\Movement.cs
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts\Movement.cs
-      projectPath: Assets\Scripts\Movement.cs
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Scripts\Movement.cs.meta
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Scripts\Movement.cs.meta
-      projectPath: Assets\Scripts\Movement.cs.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages\manifest.json
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Packages\manifest.json
-      projectPath: Packages\manifest.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Packages\packages-lock.json
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Packages\packages-lock.json
-      projectPath: Packages\packages-lock.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\AudioManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\AudioManager.asset
-      projectPath: ProjectSettings\AudioManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\boot.config
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\boot.config
-      projectPath: ProjectSettings\boot.config
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ClusterInputManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ClusterInputManager.asset
-      projectPath: ProjectSettings\ClusterInputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\DynamicsManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\DynamicsManager.asset
-      projectPath: ProjectSettings\DynamicsManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\EditorBuildSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\EditorBuildSettings.asset
-      projectPath: ProjectSettings\EditorBuildSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\EditorSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\EditorSettings.asset
-      projectPath: ProjectSettings\EditorSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\GraphicsSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\GraphicsSettings.asset
-      projectPath: ProjectSettings\GraphicsSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\InputManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\InputManager.asset
-      projectPath: ProjectSettings\InputManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\MemorySettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\MemorySettings.asset
-      projectPath: ProjectSettings\MemorySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\NavMeshAreas.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\NavMeshAreas.asset
-      projectPath: ProjectSettings\NavMeshAreas.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\PackageManagerSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\PackageManagerSettings.asset
-      projectPath: ProjectSettings\PackageManagerSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      projectPath: ProjectSettings\Packages\com.unity.testtools.codecoverage\Settings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\Physics2DSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\Physics2DSettings.asset
-      projectPath: ProjectSettings\Physics2DSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\PresetManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\PresetManager.asset
-      projectPath: ProjectSettings\PresetManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ProjectSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ProjectSettings.asset
-      projectPath: ProjectSettings\ProjectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\ProjectVersion.txt
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\ProjectVersion.txt
-      projectPath: ProjectSettings\ProjectVersion.txt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\QualitySettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\QualitySettings.asset
-      projectPath: ProjectSettings\QualitySettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\SceneTemplateSettings.json
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\SceneTemplateSettings.json
-      projectPath: ProjectSettings\SceneTemplateSettings.json
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\TagManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\TagManager.asset
-      projectPath: ProjectSettings\TagManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\TimeManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\TimeManager.asset
-      projectPath: ProjectSettings\TimeManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\UnityConnectSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\UnityConnectSettings.asset
-      projectPath: ProjectSettings\UnityConnectSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VersionControlSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\VersionControlSettings.asset
-      projectPath: ProjectSettings\VersionControlSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\VFXManager.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\VFXManager.asset
-      projectPath: ProjectSettings\VFXManager.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: ProjectSettings\XRSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\ProjectSettings\XRSettings.asset
-      projectPath: ProjectSettings\XRSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\EditorUserSettings.asset
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\UserSettings\EditorUserSettings.asset
-      projectPath: UserSettings\EditorUserSettings.asset
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Layouts\default-2021.dwlt
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\UserSettings\Layouts\default-2021.dwlt
-      projectPath: UserSettings\Layouts\default-2021.dwlt
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: UserSettings\Search.settings
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\UserSettings\Search.settings
-      projectPath: UserSettings\Search.settings
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    changedFilesText: 109 changed files
+    changedFilesText: 5 changed files
     lastCurrentBranchChangedEvent:
-      updatedTimeString: 2022-06-17T16:46:07.529+12:00
+      updatedTimeString: 2022-06-17T23:09:58.043+12:00
       cacheType: 1
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2022-06-17T16:50:34.871+12:00
+      updatedTimeString: 2022-06-17T23:10:01.028+12:00
       cacheType: 6
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2022-06-17T17:40:58.353+12:00
       cacheType: 7
   historyView:
     currentLogHasUpdate: 0
     currentTrackingStatusHasUpdate: 0
     logEntries:
-    - commitID: b7709cf295d42fa806f048094b17424aea6bd57d
+    - commitID: 936c14ebd4e6433e177d5c5facc54d335a6236a9
       mergeA: 
       mergeB: 
       authorName: Thomas Goodman
@@ -5043,8 +865,8 @@ MonoBehaviour:
       commitName: Thomas Goodman
       summary: Initial commit
       description: 
-      timeString: 2022-06-17T16:46:06.000+12:00
-      commitTimeString: 2022-06-17T16:46:06.000+12:00
+      timeString: 2022-06-17T17:15:29.000+12:00
+      commitTimeString: 2022-06-17T17:15:29.000+12:00
       changes:
       - path: .gitattributes
         fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.gitattributes
@@ -5066,15 +888,15 @@ MonoBehaviour:
         workTreeStatus: 0
     statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2022-06-17T16:50:37.877+12:00
+      updatedTimeString: 2022-06-17T17:20:03.474+12:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2022-06-17T17:20:11.762+12:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
-      - commitID: b7709cf295d42fa806f048094b17424aea6bd57d
+      - commitID: 936c14ebd4e6433e177d5c5facc54d335a6236a9
         mergeA: 
         mergeB: 
         authorName: Thomas Goodman
@@ -5083,8 +905,8 @@ MonoBehaviour:
         commitName: Thomas Goodman
         summary: Initial commit
         description: 
-        timeString: 2022-06-17T16:46:06.000+12:00
-        commitTimeString: 2022-06-17T16:46:06.000+12:00
+        timeString: 2022-06-17T17:15:29.000+12:00
+        commitTimeString: 2022-06-17T17:15:29.000+12:00
         changes:
         - path: .gitattributes
           fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.gitattributes
@@ -5105,37 +927,164 @@ MonoBehaviour:
           indexStatus: 4
           workTreeStatus: 0
       statusAhead: 0
-      selectedIndex: -1
+      selectedIndex: 0
     selectedEntry:
-      commitID: 
+      commitID: 936c14ebd4e6433e177d5c5facc54d335a6236a9
       mergeA: 
       mergeB: 
-      authorName: 
-      authorEmail: 
-      commitEmail: 
-      commitName: 
-      summary: 
+      authorName: Thomas Goodman
+      authorEmail: tommysdevelopment@gmail.com
+      commitEmail: tommysdevelopment@gmail.com
+      commitName: Thomas Goodman
+      summary: Initial commit
       description: 
-      timeString: 0001-01-01T00:00:00.000+00:00
-      commitTimeString: 0001-01-01T00:00:00.000+00:00
-      changes: []
+      timeString: 2022-06-17T17:15:29.000+12:00
+      commitTimeString: 2022-06-17T17:15:29.000+12:00
+      changes:
+      - path: .gitattributes
+        fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.gitattributes
+        projectPath: .gitattributes
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: .gitignore
+        fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.gitignore
+        projectPath: .gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: Assets\.gitignore
+        fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\.gitignore
+        projectPath: Assets\.gitignore
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
     treeChanges:
       assets:
         keys: []
         values: []
       folders:
-        keys: []
-        values: []
+        keys:
+        - Assets
+        values:
+        - path: Assets
+          label: Assets
+          level: 0
+          isFolder: 1
+          isContainer: 0
+          isCollapsed: 0
+          isHidden: 0
+          isActive: 0
+          treeIsCheckable: 0
+          checkState: 0
+          isLocked: 0
+          gitStatusEntry:
+            path: 
+            fullPath: 
+            projectPath: 
+            originalPath: 
+            indexStatus: 0
+            workTreeStatus: 0
       checkedFileNodes:
         keys: []
         values: []
       title: 
-      pathSeparator: /
+      pathSeparator: \
       displayRootNode: 0
       isSelectable: 1
       isCheckable: 0
       isUsingGlobalSelection: 0
-      nodes: []
+      nodes:
+      - path: 
+        label: 
+        level: -1
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: .gitattributes
+        label: .gitattributes
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: .gitattributes
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.gitattributes
+          projectPath: .gitattributes
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: .gitignore
+        label: .gitignore
+        level: 0
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: .gitignore
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\.gitignore
+          projectPath: .gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+      - path: Assets
+        label: Assets
+        level: 0
+        isFolder: 1
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: 
+          fullPath: 
+          projectPath: 
+          originalPath: 
+          indexStatus: 0
+          workTreeStatus: 0
+      - path: Assets\.gitignore
+        label: .gitignore
+        level: 1
+        isFolder: 0
+        isContainer: 0
+        isCollapsed: 0
+        isHidden: 0
+        isActive: 0
+        treeIsCheckable: 0
+        checkState: 0
+        isLocked: 0
+        gitStatusEntry:
+          path: Assets\.gitignore
+          fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\.gitignore
+          projectPath: Assets\.gitignore
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
       selectedNode:
         path: 
         label: 
@@ -5164,14 +1113,14 @@ MonoBehaviour:
       resetToBundled: 0
       resetToSystem: 0
       changingManually: 0
-    hasRemote: 0
+    hasRemote: 1
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2022-06-17T16:51:55.468+12:00
+      updatedTimeString: 2022-06-17T17:17:53.018+12:00
       cacheType: 1
     metricsEnabled: 1
-    newRepositoryRemoteUrl: 
+    newRepositoryRemoteUrl: https://github.com/tonkatommy/Experimenting-Launch-Pad.git
     repositoryRemoteName: origin
-    repositoryRemoteUrl: 
+    repositoryRemoteUrl: https://github.com/tonkatommy/Experimenting-Launch-Pad.git
     scroll: {x: 0, y: 0}
     userSettingsView:
       gitName: Thomas Goodman
@@ -5180,7 +1129,7 @@ MonoBehaviour:
       newGitEmail: tommysdevelopment@gmail.com
       needsSaving: 0
       lastCheckUserChangedEvent:
-        updatedTimeString: 2022-06-17T16:55:32.371+12:00
+        updatedTimeString: 2022-06-17T17:20:02.421+12:00
         cacheType: 8
     webTimeout: 3000
     gitTimeout: 5000
@@ -5209,13 +1158,13 @@ MonoBehaviour:
         gitFileStatus: 0
         lockedAt: 1 Jan 0001, 13:00
     lastCurrentRemoteChangedEvent:
-      updatedTimeString: 2022-06-17T16:46:07.529+12:00
+      updatedTimeString: 2022-06-17T17:17:53.018+12:00
       cacheType: 1
     lastLocksChangedEvent:
-      updatedTimeString: 0001-01-01T00:00:00.000+00:00
+      updatedTimeString: 2022-06-17T17:19:57.903+12:00
       cacheType: 7
     lastStatusEntriesChangedEvent:
-      updatedTimeString: 2022-06-17T16:50:36.975+12:00
+      updatedTimeString: 2022-06-17T17:20:04.676+12:00
       cacheType: 6
     lockedFiles: []
     gitStatusEntries:
@@ -5313,12 +1262,6 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
@@ -5373,21 +1316,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -5397,21 +1328,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -5421,21 +1340,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
-      projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -5469,12 +1376,6 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
@@ -5493,33 +1394,15 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\sfw.net.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll
-      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\System.Threading.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\System.Threading.dll
-      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -5547,21 +1430,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -5577,21 +1448,9 @@ MonoBehaviour:
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
     - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
       fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
       projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
-      originalPath: 
-      indexStatus: 1
-      workTreeStatus: 1
-    - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-      fullPath: D:\UNITY\UnityProjects\Experimenting Launch Pad\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
-      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
       originalPath: 
       indexStatus: 1
       workTreeStatus: 1
@@ -5890,30 +1749,30 @@ MonoBehaviour:
       m_Text: Release Lock (forced)
       m_Image: {fileID: 0}
       m_Tooltip: 
-  hasRemote: 0
-  currentRemoteName: 
-  currentBranch: 
-  currentRemoteUrl: No remote configured
+  hasRemote: 1
+  currentRemoteName: origin
+  currentBranch: master
+  currentRemoteUrl: https://github.com/tonkatommy/Experimenting-Launch-Pad.git
   statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
-  isTrackingRemoteBranch: 0
+  isTrackingRemoteBranch: 1
   currentBranchContent:
-    m_Text: 
+    m_Text: master
     m_Image: {fileID: 0}
     m_Tooltip: Active branch
   currentRemoteUrlContent:
-    m_Text: No remote configured
+    m_Text: https://github.com/tonkatommy/Experimenting-Launch-Pad.git
     m_Image: {fileID: 0}
-    m_Tooltip: Add a remote in the Settings tab
+    m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2022-06-17T16:51:55.468+12:00
+    updatedTimeString: 2022-06-17T17:40:57.134+12:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2022-06-17T16:51:55.612+12:00
+    updatedTimeString: 2022-06-17T17:41:46.436+12:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2022-06-17T16:55:00.837+12:00
+    updatedTimeString: 2022-06-17T17:41:46.423+12:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
@@ -5931,8 +1790,8 @@ MonoBehaviour:
     m_Text: Fetch
     m_Image: {fileID: 0}
     m_Tooltip: 
-  repositoryProgressValue: 0
-  repositoryProgressMessage: 
+  repositoryProgressValue: 1
+  repositoryProgressMessage: Listing changed files...
   appManagerProgressValue: 1
   appManagerProgressMessage: Initialized
   connections: []
@@ -5959,7 +1818,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 1077
-    width: 1954
+    width: 2141
     height: 274
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -5978,21 +1837,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\UNITY\UnityProjects\Experimenting Launch Pad
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c45a0000
-    m_LastClickedID: 23236
+    m_SelectedIDs: d85a0000
+    m_LastClickedID: 23256
     m_ExpandedIDs: 00000000c45a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -6048,7 +1907,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -6097,9 +1956,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1955
+    x: 2142
     y: 73
-    width: 604
+    width: 417
     height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -6140,7 +1999,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 324
+    width: 347
     height: 983
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -6149,8 +2008,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: 24fbffff
+      m_LastClickedID: -1244
       m_ExpandedIDs: 3afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -6195,9 +2054,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 325
+    x: 348
     y: 73
-    width: 1139
+    width: 1056
     height: 983
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -6400,9 +2259,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.3551784, y: -0.86948586, z: 10.857845}
+    m_Target: {x: -1.3840485, y: -0.68478966, z: 10.144262}
     speed: 2
-    m_Value: {x: -1.3551784, y: -0.86948586, z: 10.857845}
+    m_Value: {x: -1.3840485, y: -0.68478966, z: 10.144262}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -6449,13 +2308,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.19678448, y: -0.046454575, z: 0.009341228, w: -0.97927177}
+    m_Target: {x: -0.12757206, y: -0.32191768, z: 0.043833196, w: -0.9370774}
     speed: 2
-    m_Value: {x: -0.19678447, y: -0.046454575, z: 0.009341227, w: -0.9792717}
+    m_Value: {x: -0.12764142, y: -0.32052115, z: 0.043643076, w: -0.93758684}
   m_Size:
-    m_Target: 17.861128
+    m_Target: 12.357649
     speed: 2
-    m_Value: 17.861128
+    m_Value: 12.357649
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -6500,9 +2359,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1466
+    x: 1406
     y: 73
-    width: 487
+    width: 734
     height: 983
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -6514,7 +2373,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 487, y: 962}
+  m_TargetSize: {x: 734, y: 962}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -6529,8 +2388,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -243.5
-    m_HBaseRangeMax: 243.5
+    m_HBaseRangeMin: -367
+    m_HBaseRangeMax: 367
     m_VBaseRangeMin: -481
     m_VBaseRangeMax: 481
     m_HAllowExceedBaseRangeMin: 1
@@ -6550,23 +2409,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 487
+      width: 734
       height: 962
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 243.5, y: 481}
+    m_Translation: {x: 367, y: 481}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -243.5
+      x: -367
       y: -481
-      width: 487
+      width: 734
       height: 962
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 487, y: 983}
+  m_LastWindowPixelSize: {x: 734, y: 983}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
